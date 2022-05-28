@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your paper</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="script.js"></script>
+</head>
+<body id="body" onload="load()">
+
+
+
+<div id="m" class="m">
+  <div class="menus">
+    <ul id="list">
+      <a class="home" href=""><li class="list-el">Home</li></a>
+      <a class="home" href="about/index.html"><li class="list-el">About</li></a>
+      <li onclick="c()" id="close" class="list-el">Close</li>
+    </ul>
+  </div>
+</div>
+
+
+
+  <div id="box" class="text">
+ <div class="ele">
+    <textarea onkeyup="update()" placeholder="text" id="txt" cols="30" rows="10" class="txt"></textarea>
+    <br>
+    <br>
+    <button style="width:100px;" onclick="none()" class="btn"><strong>None</strong></button>
+    <button style="width:100px;" onclick="bold()" class="btn"><strong>B</strong></button>
+    <button style="width:100px;" onclick="i()" class="btn"><span style="font-weight: bold;"><i>i</i></span></button>
+    <button style="width:100px;" onclick="center()" class="btn"><strong>Center</strong></button>
+    <button style="width:100px;" onclick="hl()" class="btn"><strong>Highlight</strong></button>
+    <button style="width:100px;" onclick="download(txt.value, 'your-paper.txt')" class="btn"><strong>Download .txt</strong></button>
+    <button style="width:100px;max-resolution: inherit;20px;" onclick="white()" class="btn"><strong>White mode</strong></button>
+
+    <div id="pre-box" class="pre">
+    	<p id="pre"></p>
+    </div>
+</div>
+
+
+
+</div>
+ <div id="head" class="head">
+ 	<p id="head-title"><a id="b" class="home" href="">Your-paper</a> | Edit your notes on your best browser.<span onclick="sm()" class="menu">Menu</span></p>
+
+
+
+ </div>
+
+
+
+</body>
+</html>
